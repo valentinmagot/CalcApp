@@ -241,12 +241,12 @@ public class MainActivity extends AppCompatActivity {
                    num1 = num1 + num2;
                    break;
                case DIVISION :
-//                   if (num2 > 0 ){
+                  if (num2 > 0 ){
                        num1 = num1 / num2;
                        break;
-//                   }else {
-//                       computed();
-//                   }
+                  }else {
+                      throw new IllegalArgumentExceptionl("Le diviseur doit etre plus grand que 0");
+                  }
 
                case SOUS :
                    num1 = num1 - num2;
